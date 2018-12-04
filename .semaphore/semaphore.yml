@@ -11,6 +11,7 @@ blocks:
         jobs:
         - name: Compile
           commands:
+            - checkout
             - echo $CVERSION
             - echo $FILENAME
             - sem-version c $CVERSION
